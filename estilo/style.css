@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Passion+One & display=swap');
+@font-face {
+    font-family: 'Passion';
+    src: url('..fontes/Passion_One/PassionOne-Regular.ttf') format('truetype');
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Sriracha';
+    src: url('..fontes/Sriracha/Sriracha-Regular.ttf') format('truetype');
+    font-size: normal;
+}
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', cursiva;
+    --fonte3:'Sriracha', cursiva;
+    --fonteS:'Sriracha';
+    --fonteP:'Passion';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+html, body{
+    background-color: darkgray;
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+
+}
+header>h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2), var(--fonteP);
+    font-size: 10vw;
+}
+header>p{
+    padding-bottom: 50px;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonteS), var(--fonte3);
+    font-size: 3.5vw;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(78, 76, 76);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.397);
+    background-attachment: fixed;
+}
+section.imagem > p{
+    
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
